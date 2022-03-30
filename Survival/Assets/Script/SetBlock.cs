@@ -23,7 +23,7 @@ public class SetBlock : MonoBehaviour
     public void createBlock()
     {
         Vector3 pos = transform.position;
-        pos.y = 0;
+        pos.y -= 0.5F;
         Instantiate(prefab, pos, Quaternion.identity);
         Destroy(gameObject);
     }
